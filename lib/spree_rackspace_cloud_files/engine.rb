@@ -1,6 +1,4 @@
-require 'spree/rackspace_cloud_files_configuration'
-
-module Spree::RackspaceCloudFiles; end
+module Spree::RackspaceCloudFiles end
 
 module SpreeRackspaceCloudFiles
   class Engine < Rails::Engine
