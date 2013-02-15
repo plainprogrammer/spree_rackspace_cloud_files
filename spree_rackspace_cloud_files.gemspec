@@ -2,17 +2,17 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_rackspace_cloud_files'
-  s.version     = '1.3.2'
-  s.summary     = 'TODO: Add gem summary here'
-  s.description = 'TODO: Add (optional) gem description here'
-  s.required_ruby_version = '>= 1.8.7'
+  s.version     = '0.1.0'
+  s.summary     = 'Support Rackspace Cloud Files for Spree Images'
+  s.description = 'Add support for Rackspace Cloud Files, in addition to Amazon S3, for image storage in Spree.'
+  s.required_ruby_version = '>= 1.9.3'
 
-  # s.author    = 'You'
-  # s.email     = 'you@example.com'
-  # s.homepage  = 'http://www.spreecommerce.com'
+  s.author    = 'James Thompson'
+  s.email     = 'james@plainprograms.com'
+  s.homepage  = 'http://www.plainprograms.com'
 
   #s.files       = `git ls-files`.split("\n")
-  #s.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n")
+  s.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.require_path = 'lib'
   s.requirements << 'none'
 
