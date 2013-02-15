@@ -1,3 +1,5 @@
+module Spree::RackSpaceCloudFiles; end
+
 module SpreeRackspaceCloudFiles
   class Engine < Rails::Engine
     require 'spree/core'
@@ -5,6 +7,10 @@ module SpreeRackspaceCloudFiles
     engine_name 'spree_rackspace_cloud_files'
 
     config.autoload_paths += %W(#{config.root}/lib)
+
+    initializer "spree.rackspace_cloud_files.preferences", :before => :load_config_initializers do |app|
+      Spree::RackSpaceCloudFiles::Config = Spree::RackspaceCloudFilesConfiguration.new
+    end
 
     # use rspec for tests
     config.generators do |g|
