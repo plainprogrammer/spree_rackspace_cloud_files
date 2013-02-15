@@ -1,3 +1,5 @@
+require 'spree/rackspace_cloud_files_configuration'
+
 module Spree::RackSpaceCloudFiles; end
 
 module SpreeRackspaceCloudFiles
